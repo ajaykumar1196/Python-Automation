@@ -1,5 +1,5 @@
 '''
-@Ajay Kumar
+@By Ajay Kumar
 @Version 1.0
 
 Python Script to organise and move files of same kind on the desktop to same extension folders.
@@ -22,3 +22,4 @@ for file in os.listdir(final_path):
             os.makedirs(os.path.join(final_path, file_extension[1:].upper()))
 
         os.rename(final_path + '/' + file, os.path.join(final_path, file_extension[1:]+ '/' + file))
+        
